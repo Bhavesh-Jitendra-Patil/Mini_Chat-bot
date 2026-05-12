@@ -201,6 +201,15 @@ def chat_bot():
                         break
 
 
-                    
 
+            ###### Payment & Refunds
+        
+                elif user_input == 3:
+    
+                        print("\n1: Refund Status")
+                        print("2: Payment Failed")
+                        print("3: Download Invoice")
+                        print("4: Back to Main Menu\n")
+    
+                        User_Payment_input = int(input("Enter Your Option : "))        
 chat_bot()
