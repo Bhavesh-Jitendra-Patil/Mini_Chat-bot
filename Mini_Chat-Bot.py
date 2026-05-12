@@ -200,19 +200,17 @@ def chat_bot():
 
                         break
 
-
-
-            ###### Payment & Refunds
-        
-                elif user_input == 3:
-    
-                        print("\n1: Refund Status")
-                        print("2: Payment Failed")
-                        print("3: Download Invoice")
-                        print("4: Back to Main Menu\n")
-    
-                        User_Payment_input = int(input("Enter Your Option : "))
+            ###### Payment & Refunds 
                     
+                elif user_input == 3:
+
+                    print("\n1: Refund Status")
+                    print("2: Payment Failed")
+                    print("3: Download Invoice")
+                    print("4: Back to Main Menu\n")
+
+                    User_Payment_input = int(input("Enter Your Option : "))
+
                     if User_Payment_input == 1:
 
                         Refund_id = input("Enter Your Refund ID : ")
@@ -230,7 +228,7 @@ def chat_bot():
 
                         order_id = input("Enter Your Order Id '123123' :-  ")
 
-                        if order_id == 123123:
+                        if order_id == "123123":
                             print(f"Your Order [{order_id}] Invoice Downlode Sucessful !")
                         else:
                             print(f"Your Order [{order_id}] is Not Found ....!")
@@ -244,6 +242,6 @@ def chat_bot():
                         
             ###### Payment & Refunds
                 
-                elif user_input == 4:
+                # elif user_input == 4:
 
 chat_bot()
