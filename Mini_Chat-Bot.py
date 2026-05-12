@@ -211,5 +211,36 @@ def chat_bot():
                         print("3: Download Invoice")
                         print("4: Back to Main Menu\n")
     
-                        User_Payment_input = int(input("Enter Your Option : "))        
+                        User_Payment_input = int(input("Enter Your Option : "))
+                    
+                    if User_Payment_input == 1:
+
+                        Refund_id = input("Enter Your Refund ID : ")
+
+                        print(f'Your Refund [{Refund_id}] is Deliver in 3 to 4 working Days ') 
+
+                    elif User_Payment_input == 2:
+
+                        transaction_id = input("Enter Your Transation ID : ")
+
+                        print("\nBOT :")
+                        print("Contact our Agent Dial : 1234-1234-1234\n")
+
+                    elif User_Payment_input == 3:
+
+                        order_id = input("Enter Your Order Id '123123' :-  ")
+
+                        if order_id == 123123:
+                            print(f"Your Order [{order_id}] Invoice Downlode Sucessful !")
+                        else:
+                            print(f"Your Order [{order_id}] is Not Found ....!")
+
+                    elif User_Payment_input == 4:
+
+                        break
+
+                    else:
+                        print("Enter Valid Option...!")
+                        
+            ###### Payment & Refunds
 chat_bot()
